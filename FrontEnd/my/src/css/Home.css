@@ -1,0 +1,76 @@
+/* 전체 컨테이너 스타일 */
+.home-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* home-container 클래스에만 적용되도록 수정 */
+.home-container.main-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* 웰컴 섹션 스타일 */
+.welcome-section {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding: 2rem;
+}
+.title-section {
+  margin-bottom: 2rem;
+}
+
+.button-section {
+  margin-bottom: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.start-button {
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.start-button:hover {
+  transform: scale(1.1);
+}
+
+/* 애니메이션 정의 */
+.gradient-text {
+  background: linear-gradient(to right, #ffffff, #198754);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  margin-bottom: 200px;
+}
+
+.floating-animation {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

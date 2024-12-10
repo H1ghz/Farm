@@ -1,0 +1,281 @@
+.myfarm-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.logout-btn, .tip-btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.logout-btn {
+  background-color: #ff4444;
+  color: white;
+}
+
+.logout-btn:hover {
+  background-color: #cc0000;
+}
+
+.tip-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.tip-btn:hover {
+  background-color: #45a049;
+}
+
+.farm-content {
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.section {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+  color: #34495e;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.item-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.item-card:hover {
+  transform: translateY(-5px);
+}
+
+.item-card h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.item-card p {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .myfarm-container {
+    padding: 1rem;
+  }
+
+  .items-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+.farm-page-container {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.loading-container {
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #28a745 !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: white !important;
+}
+
+.navbar .nav-link:hover {
+  color: #d4edda !important;
+}
+
+.btn-outline-light {
+  color: white;
+  border-color: white;
+}
+
+.btn-outline-light:hover {
+  background-color: white;
+  color: #28a745;
+}
+
+.navbar-brand {
+  font-weight: 600;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  background-color: #e8f5e9 !important;
+  border-bottom: none;
+  border-radius: 15px 15px 0 0 !important;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.farm-item {
+  padding: 0.8rem;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  transition: background-color 0.2s;
+}
+
+.farm-item:hover {
+  background-color: #e9ecef;
+}
+
+.badge {
+  padding: 0.5rem 0.8rem;
+  font-weight: 500;
+}
+
+.h5 {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.h6 {
+  color: #34495e;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .row {
+    margin: 0;
+  }
+  
+  .col-md-4 {
+    padding: 0.5rem;
+  }
+}
+
+/* 사이드바 스타일 추가 */
+.sidebar {
+  width: 280px;
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s;
+  background-color: #343a40;
+}
+
+.sidebar-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.sidebar .nav-link {
+  padding: 0.8rem 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s;
+}
+
+.sidebar .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.sidebar .nav-link i {
+  width: 20px;
+  text-align: center;
+}
+
+/* 드롭다운 메뉴 스타일 */
+.sidebar .collapse .nav-link {
+  padding-left: 3rem;
+  font-size: 0.9rem;
+}
+
+/* 메인 컨텐츠 영역 조정 */
+.main-content {
+  margin-left: 280px;
+  width: calc(100% - 280px);
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* 반응형 사이드바 */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 0;
+    transform: translateX(-100%);
+  }
+  
+  .sidebar.show {
+    width: 280px;
+    transform: translateX(0);
+  }
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+  }
+}

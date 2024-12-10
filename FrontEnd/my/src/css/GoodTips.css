@@ -1,0 +1,143 @@
+/* Google Fonts 임포트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+/* 전체 스타일 */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* 네비게이션 바 스타일 */
+.navbar {
+  padding: 1rem 0;
+  background-color: #28a745 !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo-img {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+}
+
+.brand-text {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white !important;
+  margin-left: 10px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 카드 스타일 */
+.tip-card {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.card-title {
+  font-weight: 700;
+  color: #2c3e50;
+  font-size: 1.25rem;
+}
+
+.card-text {
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.category-badge .badge {
+  font-size: 0.8rem;
+  padding: 0.5em 1em;
+  font-weight: 500;
+}
+
+/* 버튼 스타일 */
+.btn-success, 
+.btn-outline-primary {
+  background-color: #198754;
+  border-color: #198754;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover, 
+.btn-outline-primary:hover {
+  background-color: #146c43;
+  border-color: #146c43;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* 애니메이션 효과 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tip-card {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  
+  .lead {
+    font-size: 1rem;
+  }
+} 
+
+.tips-container {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.tip-card {
+  transition: transform 0.2s;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+}
+
+.category-badge {
+  display: inline-block;
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-weight: 500;
+}
+
+.btn-outline-light:hover {
+  background-color: rgba(255,255,255,0.2);
+} 
